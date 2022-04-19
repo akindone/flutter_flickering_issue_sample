@@ -95,21 +95,17 @@ class Home extends StatelessWidget {
   Widget _buildAnim(BuildContext context) {
     return const SizedBox(
       height: 230,
-      child: AnimatedOpacity(
-        opacity: 1,
-        duration: Duration(seconds: 2),
-        child: ImageSequenceAnimator(
-          'assets/ImageSequence',
-          "Frame_",
-          0,
-          5,
-          "png",
-          60,
-          key: Key("offline"),
-          fps: 24,
-          isLooping: true,
-          isAutoPlay: true,
-        ),
+      child: ImageSequenceAnimator(
+        'assets/ImageSequence',
+        "Frame_",
+        0,
+        5,
+        "png",
+        60,
+        key: Key("offline"),
+        fps: 24,
+        isLooping: true,
+        isAutoPlay: true,
       ),
     );
   }
